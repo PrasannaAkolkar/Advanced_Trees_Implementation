@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrieActivity"
+    android:background="#19324D"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00979696">
+
+
+        <TextView
+            android:id="@+id/TRIE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="TRIE"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            />
+
+
+        <EditText
+            android:id="@+id/TEditInsert"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"
+            android:hint="Insert String"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/TInsert"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:layout_toRightOf="@+id/TEditInsert"
+            android:background="@android:drawable/ic_input_add"
+            android:onClick="InsertTrieFunction" />
+
+
+        <EditText
+            android:id="@+id/TEditSearch"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/TInsert"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:hint="Search String"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/TSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/TInsert"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/TEditSearch"
+            android:background="@android:drawable/ic_search_category_default"
+            android:onClick="SearchTrieFunction" />
+
+        <TextView
+            android:id="@+id/dispSearchTRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TInsert"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/TSearch"
+            android:hint="Found/Not found"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+
+            />
+
+        <EditText
+            android:id="@+id/TDeleteET"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/TSearch"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:hint="Delete String"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+
+            />
+
+        <Button
+            android:id="@+id/TDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/TSearch"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/TDeleteET"
+            android:background="@drawable/trash"
+            android:onClick="DeleteTrieFunction"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

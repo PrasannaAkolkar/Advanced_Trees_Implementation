@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contents"
+        android:text="CONTENTS"
+        android:layout_centerHorizontal="true"
+        android:textSize="32dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cont_rb"
+        android:text="1-->Red Black Tree"
+        android:textSize="25dp"
+        android:layout_marginTop="90dp"
+        android:layout_below="@id/contents"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/rbTree"
+        android:layout_toRightOf="@id/cont_rb"
+        android:layout_below="@id/contents"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/codelab"
+
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/theoryrb"
+        android:layout_toRightOf="@id/rbTree"
+        android:layout_below="@+id/contents"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/thoery"
+        />
+
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cont_sp"
+        android:text="2-->Splay Tree"
+        android:textSize="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/cont_rb"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/splay"
+        android:layout_below="@+id/cont_rb"
+        android:layout_toRightOf="@id/cont_sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/codelab"
+
+
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/theorysp"
+        android:layout_toRightOf="@id/splay"
+        android:layout_below="@+id/cont_rb"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/thoery"
+        />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cont_tr"
+        android:text="3-->Trie"
+        android:textSize="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/cont_sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/trie"
+        android:layout_below="@+id/cont_sp"
+        android:layout_toRightOf="@id/cont_tr"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/codelab"
+
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/theorytr"
+        android:layout_toRightOf="@id/trie"
+        android:layout_below="@+id/cont_sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/thoery"
+        />
+
+
+</RelativeLayout>

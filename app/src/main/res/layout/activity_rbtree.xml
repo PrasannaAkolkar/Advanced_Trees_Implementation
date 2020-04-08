@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RBTreeActivity"
+    android:background="#19324D"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00979696">
+
+
+        <TextView
+            android:id="@+id/RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="RED BLACK TREE"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            />
+
+
+        <EditText
+            android:id="@+id/rbEditInsert"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:hint="Insert Values"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/rbInsert"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@+id/rbEditInsert"
+            android:background="@android:drawable/ic_input_add"
+            android:onClick="InsertFunction" />
+
+
+        <EditText
+            android:id="@+id/rbEditSearch"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rbInsert"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:hint="Search Value"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/rbSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rbInsert"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/rbEditSearch"
+            android:background="@android:drawable/ic_search_category_default"
+            android:onClick="SearchRBTreeFunction" />
+
+        <TextView
+            android:id="@+id/dispSearchRbRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbInsert"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/rbSearch"
+            android:hint="Found/Not found"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+
+            />
+
+        <TextView
+            android:id="@+id/rbTextCount"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rbSearch"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:hint="Node Count"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+
+            />
+
+        <Button
+            android:id="@+id/rbCount"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rbSearch"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/rbTextCount"
+            android:background="#00FFFFFF"
+            android:onClick="CountFunction"
+            android:text="C"
+            android:textSize="22dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvforrb"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rbCount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="To Empty the Tree"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/rbClearTree"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rbCount"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/tvforrb"
+            android:background="@drawable/clear"
+            android:onClick="ClearRbTreeFunction" />
+
+        <Button
+            android:id="@+id/RbDisplay"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbClearTree"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:onClick="DisplayRBTree"
+            android:text="Display the tree"
+            android:background="@drawable/rounded_btn"
+
+
+            />
+
+        <TextView
+            android:id="@+id/RbInorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RbDisplay"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:text="Inorder Traversal->"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+
+            />
+
+        <TextView
+            android:id="@+id/RbPreorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RbInorder"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:text="Preorder Traversal->"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+
+            />
+
+        <TextView
+            android:id="@+id/RbPostorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RbPreorder"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:text="Preorder Traversal->"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
